@@ -1,0 +1,7 @@
+x=int(input())
+dict1={}
+for i in range(0,x):
+    name=input()
+    mark=float(input())
+    dict1[name]=mark
+dict(sorted(dixt1.(items())))
