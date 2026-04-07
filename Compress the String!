@@ -1,0 +1,6 @@
+from itertools import groupby
+S = input()
+groups = groupby(S)
+result = [(len(list(g)), int(k)) for k, g in groups]
+print(*(result))
+
