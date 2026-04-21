@@ -1,0 +1,10 @@
+a = set(input().split())
+n = int(input())
+is_strict = True
+for _ in range(n):
+    other = set(input().split())
+    if not (a.issuperset(other) and len(a) > len(other)):
+        is_strict = False
+        break
+
+print(is_strict)
